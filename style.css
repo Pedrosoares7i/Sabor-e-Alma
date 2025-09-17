@@ -59,7 +59,7 @@ html {
 
 #Mission {
   text-align: center;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   padding: 20px;
 }
@@ -98,17 +98,17 @@ html {
 
 /* Começo do Footer */
 footer {
-    background-color: #000000;
-    color: white;
-    margin-top: auto;
-    padding: 5px 0px;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
+  background-color: #000000;
+  color: white;
+  margin-top: auto;
+  padding: 5px 0px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 /* Começo Cardápio.html */
 
-#Bebidas{
+#Bebidas {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   padding-top: 50px;
@@ -116,43 +116,93 @@ footer {
   color: #d84315;
 }
 
-#Cervejas{
+#Cervejas {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin: 40px;
   color: #d84315;
-  
+}
+
+#Lanches {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 40px;
+  color: #d84315;
+}
+
+.card img {
+  width: 100%;
+  /* ocupa toda a largura do card */
+  height: 180px;
+  /* todas terão a mesma altura */
+  object-fit: contain;
+  /* corta a sobra e centraliza */
+  border-radius: 8px;
+  /* opcional */
+}
+
+
+.card-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-info p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.section-foods {
+  display: flex;
+  flex-wrap: wrap;
+  /* quebra em várias linhas */
+  justify-content: center;
+  gap: 20px;
+  /* espaço entre os cards */
+  margin: 40px auto;
+  max-width: 1000px;
+  /* centraliza e limita largura */
 }
 
 .card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      max-width: 300px;
-    }
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  flex: 0 1 280px;
+  /* largura fixa dos cards */
+  display: flex;
+  flex-direction: column;
+  /* imagem em cima, texto embaixo */
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
 
-    .card img {
-      width: 50px;
-      height: auto;
-    }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
 
-    .card-info h3 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #333;
-    }
+.card-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
 
-    .card-info p {
-      margin: 2px 0;
-      font-size: 14px;
-      color: #555;
-    }
+.card-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
 
-.section-foods{
-
+span{
+  font-family: 'Poppins';
+  font-weight: bold;
+  color: #d84315;
 }
